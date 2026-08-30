@@ -1,0 +1,194 @@
+## 11:40:16.548 Log
+Scene Poker_Omaha5 is loaded
+
+## 11:40:16.917 Log
+  Poker_FTUEManager   ||  gameRunOnSDK  || IsFTUE  =  False
+
+## 11:40:16.930 Log
+Font Asset [LiberationSans SDF - Fallback] Units Per EM set to 2048. Please commit the newly serialized value.
+
+## 11:40:16.930 Log
+ All Resouce Holder || GetTMPfontAssetsLiberationSans
+
+## 11:40:16.936 Log
+ All Resouce Holder || GetTMPfontAssetsLiberationSans
+
+## 11:40:16.937 Log
+ All Resouce Holder || GetTMPfontAssetsLiberationSans
+
+## 11:40:16.937 Log
+Clearing player list
+
+## 11:40:16.937 Log
+Adding players up to index: 4
+
+## 11:40:16.938 Log
+Adding player 0
+
+## 11:40:16.938 Log
+Adding player 1
+
+## 11:40:16.938 Log
+Adding player 2
+
+## 11:40:16.940 Log
+Adding player 3
+
+## 11:40:16.940 Log
+Setting player scale to Vector3.one
+
+## 11:40:16.940 Log
+Function execution completed
+
+## 11:40:16.941 Log
+ All Resouce Holder || GetTMPfontAssetsLiberationSans
+
+## 11:40:16.941 Log
+ All Resouce Holder || GetTMPfontAssetsLiberationSans
+
+## 11:40:16.941 Log
+ All Resouce Holder || GetTMPfontAssetsLiberationSans
+
+## 11:40:16.942 Log
+SocketConnectionStart
+
+## 11:40:16.942 Log
+<color=Yellow>Socket Connection URL -> </color>http://84.46.249.49:3010/socket.io/
+
+## 11:40:16.977 Log
+Event Recieved----->>>Done<<<-------------
+
+## 11:40:16.978 Log
+Event Recieved----->>>HEART_BEAT<<<-------------
+
+## 11:40:16.978 Log
+Event Recieved----->>>SIGNUP<<<-------------
+
+## 11:40:16.979 Log
+Event Recieved----->>>GAME_TABLE_INFO<<<-------------
+
+## 11:40:16.979 Log
+Event Recieved----->>>JOIN_TABLE<<<-------------
+
+## 11:40:16.979 Log
+Event Recieved----->>>SHOW_POPUP<<<-------------
+
+## 11:40:16.979 Log
+Event Recieved----->>>CHOOSE_DEALER<<<-------------
+
+## 11:40:16.979 Log
+Event Recieved----->>>LOCK_IN_PERIOD<<<-------------
+
+## 11:40:16.979 Log
+Event Recieved----->>>COLLECT_BOOT_VALUE<<<-------------
+
+## 11:40:16.981 Log
+Event Recieved----->>>ROUND_TIMER_STARTED<<<-------------
+
+## 11:40:16.981 Log
+Event Recieved----->>>SHOW_MY_CARDS<<<-------------
+
+## 11:40:16.981 Log
+Event Recieved----->>>USER_TURN_STARTED<<<-------------
+
+## 11:40:16.982 Log
+Event Recieved----->>>SHOW_MY_PLAY_ACTION<<<-------------
+
+## 11:40:16.982 Log
+Event Recieved----->>>CHECK<<<-------------
+
+## 11:40:16.982 Log
+Event Recieved----->>>FOLD<<<-------------
+
+## 11:40:16.982 Log
+Event Recieved----->>>ALLIN<<<-------------
+
+## 11:40:16.982 Log
+Event Recieved----->>>CALL<<<-------------
+
+## 11:40:16.983 Log
+Event Recieved----->>>RAISE<<<-------------
+
+## 11:40:16.983 Log
+Event Recieved----->>>SHOW_COMMUNITY_CARD<<<-------------
+
+## 11:40:16.983 Log
+Event Recieved----->>>COLLECT_POT<<<-------------
+
+## 11:40:16.984 Log
+Event Recieved----->>>WINNER_DECLARE<<<-------------
+
+## 11:40:16.984 Log
+Event Recieved----->>>REJOIN<<<-------------
+
+## 11:40:16.984 Log
+Event Recieved----->>>LEAVE_TABLE<<<-------------
+
+## 11:40:16.984 Log
+Event Recieved----->>>SHOW_BEST_COMBINATION_CARD<<<-------------
+
+## 11:40:16.984 Log
+Event Recieved----->>>AUTO_TURN<<<-------------
+
+## 11:40:16.984 Log
+Event Recieved----->>>ACTIVE_PLAYER_LIST<<<-------------
+
+## 11:40:16.986 Log
+Event Recieved----->>>BACK_IN_GAME_PLAYING<<<-------------
+
+## 11:40:16.986 Log
+Event Recieved----->>>SWITCH_TABLE<<<-------------
+
+## 11:40:16.986 Log
+Event Recieved----->>>PREVIOUS_GAME_HISTORY<<<-------------
+
+## 11:40:16.987 Log
+Event Recieved----->>>UPDATED_WALLET_BALANCE<<<-------------
+
+## 11:40:16.987 Log
+Event Recieved----->>>SEND_MESSAGE_TABLE<<<-------------
+
+## 11:40:16.987 Log
+Event Recieved----->>>ADD_CHIPS_REQUEST<<<-------------
+
+## 11:40:16.987 Log
+Event Recieved----->>>SIT_IN<<<-------------
+
+## 11:40:17.729 Error
+Socket Error : Request Finished with Error! Exception: A socket operation was attempted to an unreachable host.
+
+
+## 11:40:18.320 Error
+Socket Error : Request Finished with Error! Exception: A socket operation was attempted to an unreachable host.
+
+
+## 11:40:21.102 Error
+Socket Error : Request Finished with Error! Exception: A socket operation was attempted to an unreachable host.
+
+
+## 11:40:25.585 Error
+Socket Error : Request Finished with Error! Exception: A socket operation was attempted to an unreachable host.
+
+
+## 11:40:28.769 Error
+Socket Error : Request Finished with Error! Exception: A socket operation was attempted to an unreachable host.
+
+
+## 11:40:30.511 Warning
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+
+## 11:40:30.512 Warning
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+
+## 11:40:30.512 Warning
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+
+## 11:40:30.513 Warning
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+
+## 11:40:30.513 Warning
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+
+## 11:40:30.513 Warning
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+
