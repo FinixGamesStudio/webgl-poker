@@ -162,41 +162,25 @@
     // UNITY BUILD CONFIG
     // ============================================================
 
-    var buildUrl = "Build";
-
-
-    var loaderUrl =
-        buildUrl + "/webgl-poker.loader.js";
-
-
-    var config =
-    {
+   var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/webgl-poker.loader.js";
+      var config = {
         arguments: [],
-
-        dataUrl:
-            buildUrl + "/webgl-poker.data",
-
-        frameworkUrl:
-            buildUrl + "/webgl-poker.framework.js",
-
-        codeUrl:
-            buildUrl + "/webgl-poker.wasm",
-
-        streamingAssetsUrl:
-            "StreamingAssets",
-
-        companyName:
-            "Xogo",
-
-        productName:
-            "Poker",
-
-        productVersion:
-            "0.1",
-
-        showBanner:
-            unityShowBanner
-    };
+        dataUrl: buildUrl + "/webgl-poker.data.gz",
+        frameworkUrl: buildUrl + "/webgl-poker.framework.js.gz",
+        codeUrl: buildUrl + "/webgl-poker.wasm.gz",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Xogo",
+        productName: "Poker",
+        productVersion: "0.1",
+        showBanner: unityShowBanner,
+        // errorHandler: function(err, url, line) {
+        //    alert("error " + err + " occurred at line " + line);
+        //    // Return 'true' if you handled this error and don't want Unity
+        //    // to process it further, 'false' otherwise.
+        //    return true;
+        // },
+      };
 
 
     // ============================================================
