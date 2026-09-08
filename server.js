@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 
 const app = express();
-const PORT = process.env.PORT || 4111;
+const PORT = process.env.PORT || 4600;
 
 const ROOT = __dirname;
 const POKER_DIR = path.join(ROOT, "poker");
