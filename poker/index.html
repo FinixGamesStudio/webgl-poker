@@ -39,6 +39,81 @@
   <script>
 
     // ============================================================
+    // EXIT BRIDGE
+    // ============================================================
+
+    // Communicate an exit request to the host app, parent frame, or browser.
+    window.exitGame = function(reason)
+    {
+        reason = reason || "user_exit";
+
+        console.log('[ExitBridge] Exiting game session. Reason: "' + reason + '"');
+
+        var payload = {
+            event: "exit_game",
+            action: "exit_game",
+            type: "EXIT_GAME",
+            reason: reason,
+            timestamp: Date.now()
+        };
+
+        var payloadString = JSON.stringify(payload);
+        var rnWebView = window.ReactNativeWebView;
+
+        // React Native WebView bridge.
+        if (rnWebView && typeof rnWebView.postMessage === "function")
+        {
+            try
+            {
+                rnWebView.postMessage(payloadString);
+                console.log("[ExitBridge] Sent exit_game to ReactNativeWebView");
+            }
+            catch (err)
+            {
+                console.warn("[ExitBridge] Failed to postMessage to ReactNativeWebView:", err);
+            }
+        }
+
+        // Parent window bridge when the game is embedded in an iframe.
+        if (window.parent && window.parent !== window)
+        {
+            try
+            {
+                window.parent.postMessage(payloadString, "*");
+                window.parent.postMessage(payload, "*");
+                console.log("[ExitBridge] Sent exit_game to window.parent");
+            }
+            catch (err)
+            {
+                console.warn("[ExitBridge] Failed to postMessage to window.parent:", err);
+            }
+        }
+
+        // Allow an injected bridge script listening on the current window to react.
+        try
+        {
+            window.postMessage(payloadString, "*");
+        }
+        catch (err) {}
+
+        // Browser fallback for pages opened in a separate tab or from history.
+        try
+        {
+            window.close();
+        }
+        catch (err) {}
+
+        try
+        {
+            if (window.history.length > 1)
+            {
+                window.history.back();
+            }
+        }
+        catch (err) {}
+    };
+
+    // ============================================================
     // UNITY CANVAS
     // ============================================================
 
