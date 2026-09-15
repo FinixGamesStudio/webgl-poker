@@ -9,6 +9,9 @@ const LUDO_DIR = path.join(ROOT, "ludo");
 const POKER_DIR = path.join(ROOT, "poker");
 const BLITZ_DIR = path.join(ROOT, "21Bliz", "dist");
 
+console.log("LUDO_DIR:: ", LUDO_DIR);
+console.log("POKER_DIR:: ", POKER_DIR);
+console.log("BLITZ_DIR:: ", BLITZ_DIR);
 const setBuildHeaders = (res, filePath) => {
     console.log("filePath:: ", filePath);
     
