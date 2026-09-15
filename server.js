@@ -5,6 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 4600;
 
 const ROOT = __dirname;
+const LUDO_DIR = path.join(ROOT, "ludo");
 const POKER_DIR = path.join(ROOT, "poker");
 const BLITZ_DIR = path.join(ROOT, "21Bliz", "dist");
 
@@ -30,11 +31,15 @@ const setBuildHeaders = (res, filePath) => {
 };
 
 // Each game keeps its own asset root, so both builds can run on one port.
+app.use("/ludo", express.static(LUDO_DIR, { setHeaders: setBuildHeaders }));
 app.use("/poker", express.static(POKER_DIR, { setHeaders: setBuildHeaders }));
 app.use(["/21bliz", "/21Bliz"], express.static(BLITZ_DIR, { setHeaders: setBuildHeaders }));
 // The existing Vite bundle emits root-relative preload URLs such as /assets/*.js.
 app.use("/assets", express.static(path.join(BLITZ_DIR, "assets"), { setHeaders: setBuildHeaders }));
 
+app.get(["/ludo", "/ludo/"], (req, res) => {
+    res.sendFile(path.join(LUDO_DIR, "index.html"));
+});
 app.get(["/poker", "/poker/"], (req, res) => {
     res.sendFile(path.join(POKER_DIR, "index.html"));
 });
@@ -72,6 +77,7 @@ app.listen(PORT, "0.0.0.0", () => {
     console.log(` Network: http://YOUR-PC-IP:${PORT}`);
     console.log(` Poker:   http://localhost:${PORT}/poker/`);
     console.log(` 21 Blitz:http://localhost:${PORT}/21bliz/`);
+    console.log(` Ludo:    http://localhost:${PORT}/ludo/`);
     console.log("========================================");
     console.log("");
 });
