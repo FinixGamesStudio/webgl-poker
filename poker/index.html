@@ -120,7 +120,7 @@
       function getQueryValue() {
         const urlParams = new URLSearchParams(window.location.search);
 
-        const queryValue = urlParams.get("auth") || "";
+        const queryValue = urlParams.get("gameToken") || "";
 
         console.log("Current auth:", queryValue);
 
